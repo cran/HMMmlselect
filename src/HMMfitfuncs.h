@@ -367,7 +367,8 @@ void HMM::Backwardlog()
         Rprintf("Backwardlog:\trun\t calculateBmatrix\t first\n");
         stop(0);
     }
-    double sum, maxtemp;
+    double sum;
+    double maxtemp=0.0;
     std::vector<double> temp;
     temp.resize(N);
     logbeta.resize(M);
@@ -406,9 +407,11 @@ void HMM::Forwardlog()
     std::vector<double> temp;
     temp.resize(N);
     logalpha.resize(M);
-    for (i = 0; i < M; i ++)
+    for (i = 0; i < M; i ++){
         logalpha[i].resize(N);
-    double sum, maxtemp;
+    }
+    double sum;
+    double maxtemp = 0.0;
     for(i = 0; i < N; i ++){
         if(pi[i] > 0.0000000000001){
             logalpha[0][i] = log(pi[i]) + B[i][0];
@@ -458,7 +461,8 @@ void HMM::ComputeGamma()
     loggamma.resize(M);
     for(i = 0; i < M; i ++)
         loggamma[i].resize(N);
-    double denominator, maxtemp;
+    double denominator;
+    double maxtemp = 0.0;
     for(t = 0; t < M; t ++){
         denominator = 0.0;
         for(j = 0; j < N; j ++){
@@ -619,7 +623,7 @@ void HMM::BaumWelch(bool verbose)
 void HMM::BaumWelch_multi_starting_point_fitting(int N_starting_points, std::vector<double> sigma2_init_input, std::vector<double> pi_init_input, std::vector<std::vector<double> > A_init_input, bool verbose){
 
     int i, j, k;
-    double current_max_ll;
+    double current_max_ll = 0.0;
     std::vector<double> current_max_mu, current_max_sigma2, current_max_pi, current_max_s2, mu_init_temp;
     std::vector<std::vector<double> > current_max_A;
 
