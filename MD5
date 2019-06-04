@@ -1,6 +1,6 @@
-05f6fa9e5da0625c32c1b20f10e55768 *DESCRIPTION
+f1004ce03cf140506f3cd18bc3906cba *DESCRIPTION
 3b6bcf0bf59b3dca4b9e94cdcfd09207 *NAMESPACE
-c47faf1b2eace21a92fc7ff8f435542e *R/HMMorderselectionfacility.R
+9a16dda8fc885586648aa12feca1ef37 *R/HMMorderselectionfacility.R
 d5a6741e94e632157a07d8f5872cb279 *R/RcppExports.R
 fde3ec7566713b790e91a594e15118b9 *inst/extdata/Manuel.pdf
 8097a01730e8c2ba20e0720879055b65 *man/HMMfit.Rd

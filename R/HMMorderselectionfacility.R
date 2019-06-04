@@ -16,7 +16,7 @@ library(mclust)
 library(mvtnorm)
 library(Rcpp)
 Sys.setenv("PKG_CXXFLAGS" = "-std=c++11")
-sourceCpp('src/HMMfit.cpp')
+#sourceCpp("src/HMMfit.cpp")
 
 # identify local region for locally restricted importance sampling
 
