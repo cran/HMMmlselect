@@ -12,7 +12,7 @@ double HMMll (Rcpp::List tuningparameters){
     std::vector<double> pi_init = Rcpp::as<std::vector<double> >(tuningparameters["Pi"]);
     std::vector<std::vector<double> > A_init;
     std::vector<double> Atemp = Rcpp::as<std::vector<double> >(tuningparameters["A"]);
-    int DimensionA = (int)sqrt(Atemp.size());
+    int DimensionA = (int)sqrt( (double) Atemp.size());
     A_init.resize(DimensionA);
     int j, k, i = 0;
     for (j = 0; j < DimensionA; j ++){
@@ -60,7 +60,7 @@ Rcpp::NumericMatrix HMMfitting(Rcpp::List tuningparameters){
 
     std::vector<std::vector<double> > A_init, alpha_prior;
     std::vector<double> Atemp = Rcpp::as<std::vector<double> >(tuningparameters["AInit"]);
-    int DimensionA = (int)sqrt(Atemp.size());
+    int DimensionA = (int)sqrt( (double) Atemp.size());
     A_init.resize(DimensionA);
     int j, k, i = 0;
     for (j = 0; j < DimensionA; j ++){
@@ -71,7 +71,7 @@ Rcpp::NumericMatrix HMMfitting(Rcpp::List tuningparameters){
         }
     }
     Atemp = Rcpp::as<std::vector<double> >(tuningparameters["AlphaPrior"]);
-    DimensionA = (int)sqrt(Atemp.size());
+    DimensionA = (int)sqrt( (double) Atemp.size());
     alpha_prior.resize(DimensionA);
     i = 0;
     for (j = 0; j < DimensionA; j ++){
@@ -229,7 +229,7 @@ Rcpp::List HMMsimulate(Rcpp::List tuningparameters){
 
     std::vector<std::vector<double> > A_true;
     std::vector<double> Atemp = Rcpp::as<std::vector<double> >(tuningparameters["A"]);
-    int K = (int)sqrt(Atemp.size());
+    int K = (int)sqrt( (double) Atemp.size());
     A_true.resize(K);
     int j, k, i = 0;
     for (j = 0; j < K; j ++){

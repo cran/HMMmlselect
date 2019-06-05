@@ -1,6 +1,6 @@
-f1004ce03cf140506f3cd18bc3906cba *DESCRIPTION
+8b587fd41aa6f2f9db11be9b1eed5047 *DESCRIPTION
 3b6bcf0bf59b3dca4b9e94cdcfd09207 *NAMESPACE
-9a16dda8fc885586648aa12feca1ef37 *R/HMMorderselectionfacility.R
+476152e23507499a1c16496fe54473cc *R/HMMorderselectionfacility.R
 d5a6741e94e632157a07d8f5872cb279 *R/RcppExports.R
 fde3ec7566713b790e91a594e15118b9 *inst/extdata/Manuel.pdf
 8097a01730e8c2ba20e0720879055b65 *man/HMMfit.Rd
@@ -23,7 +23,7 @@ c57bdd95e3e4123bfae7a30b21afe870 *man/find_importance_function.Rd
 f5951b5e8972ac5f45a35c36baa9694b *man/logmvTdensity.Rd
 e3152f9b9fa511b69f51101f97c7978e *man/multivariate_mixture_density.Rd
 99d23c39be9970eb78fb69779c12f0c9 *man/sample_mixture.Rd
-7dfc794af4a546c29897044a7b1fa66d *src/HMMfit.cpp
+af54185a6c9c0b8369032c2d486eb76f *src/HMMfit.cpp
 50a0e50c97157e38dbec2215106c7bd9 *src/HMMfitfuncs.h
 54fe0c6f5ba794b1773be42c75330b7b *src/IncludeLib.h
 ac67a3b499cbe313a422c92d4a8b59ce *src/RcppExports.cpp
