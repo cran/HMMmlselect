@@ -7,6 +7,9 @@ if(!require(mclust)) {
 if(!require(mvtnorm)) {
     install.packages("mvtnorm", repos = "http://cran.us.r-project.org")
 }
+if(!require(MCMCpack)) {
+  install.packages("MCMCpack", repos = "http://cran.us.r-project.org")
+}
 if(!require(Rcpp)) {
     install.packages("Rcpp", repos = "http://cran.us.r-project.org")
 }

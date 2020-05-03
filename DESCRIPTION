@@ -2,7 +2,7 @@ Package: HMMmlselect
 Type: Package
 Title: Determine the Number of States in Hidden Markov Models via
         Marginal Likelihood
-Version: 0.1.5
+Version: 0.1.6
 Author: Yang Chen, Cheng-Der Fuh, Chu-Lan Kao, and S. C. Kou.
 Maintainer: Chu-Lan Michael Kao <chulankao@gmail.com>
 Description: Provide functions to make estimate the number of states for a hidden Markov 
@@ -11,11 +11,11 @@ Description: Provide functions to make estimate the number of states for a hidde
 License: GPL (>= 2)
 Encoding: UTF-8
 LazyData: true
-Imports: HiddenMarkov, mclust, mvtnorm, stats, DirichletReg, Rcpp (>=
+Imports: HiddenMarkov, mclust, mvtnorm, stats, MCMCpack, Rcpp (>=
         0.12.10)
 LinkingTo: Rcpp
 SystemRequirements: C++11
 NeedsCompilation: yes
-Packaged: 2019-06-28 12:25:43 UTC; USER
+Packaged: 2020-05-03 03:50:31 UTC; USER
 Repository: CRAN
-Date/Publication: 2019-06-28 13:10:08 UTC
+Date/Publication: 2020-05-03 05:00:02 UTC
